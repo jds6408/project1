@@ -1,0 +1,275 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="common/css/header.css">
+    <link rel="stylesheet" href="common/css/footer.css">
+    <link rel="stylesheet" href="layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="common/js/fullnav.js"></script>
+    <script src="https://kit.fontawesome.com/96c51572f4.js" crossorigin="anonymous"></script>
+    <script src="mainpopup.js"></script>
+
+    <style>
+        .con1 {
+            height: 600px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">글로벌네비게이션바로가기</a>
+    </div>
+    <div id="wrap">
+        <!--헤더 삽입 영역-->
+        <? include "common/main_header.html" ?>
+        <!--헤더 삽입 영역-->
+
+        <!--콘텐츠 영역-->
+        <!--비주얼영역-->
+        <section class="visiual_wrap">
+            <h2 class="hidden">메인사진영역</h2>
+            <div class="visiual">
+            </div>
+
+        </section>
+        <!--컨텐츠 알림 영역-->
+        <section class="notice_wrap">
+            <h2 class="hidden">회사소개 및 채용</h2>
+            <ul>
+                <li class="company_notice">
+                    <a href="#">
+                        <h3>About Dorothy</h3>
+                        <p>도로시컴퍼니(주)는 연예음반기획 및 공연기획 등 영향력있는<br> 종합엔터테인먼트사로 발돋움하고 있는 저력있는 기업입니다.</p>
+
+                        <span>
+                            더보기 <i class="fas fa-chevron-right"></i> </span>
+                    </a>
+                </li>
+                <li class="recruit_notice"><a href="#">
+                        <h3>Audition</h3>
+                        <p>도로시컴퍼니(주)에서는 당신을 기다리고 있습니다.<br> 저희와 함께해주세요</p>
+
+
+                        <span>
+                            더보기 <i class="fas fa-chevron-right"></i> </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!--아티스트소개 영역-->
+        <section class="artist_notice_wrap">
+            <h2 class="hidden">아티스트 소개</h2>
+            <div class="artist_notice">
+                <h3 class="hidden">아티스트 (로시)</h3>
+                <div class="rothy_wrap">
+                    <div class="border_box">
+                        <div class="top_intro">
+                            <span class="intro">Introduce</span>
+                            <span class="name">Rothy</span>
+                        </div>
+                        <ul class="rothy">
+
+                            <li class="left_info_content">
+                                <p>신승훈의 뮤즈에서 싱어송라이터의 시작 </p>
+                                <p>한 장르에 국한되지 않고, 다양한 음악을 소화해내는 로시의<br /> 음악적 역량을 보여줄 수 있도록 섬세한 노력을 기울였다. </p>
+                            </li>
+                            <li class="right_icon_content">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-record-vinyl"></i> Album</a></li>
+                                    <li><a href="#"><i class="fas fa-video"></i> video</a></li>
+                                    <li><a href="#"><i class="far fa-images"></i> Gallery</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> Schedule</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="more" href="#"> 자세히보기 </a>
+                    </div>
+                </div>
+                <!--
+                슬라이드
+                <h3 class="hidden">아티스트 (신승훈)</h3>
+                <div class="rothy_wrap">
+                    <div class="border_box">
+                        <div class="top_intro">
+                            <span class="intro">Introduce</span>
+                            <span class="name">Rothy</span>
+                        </div>
+                        <ul class="rothy">
+
+                            <li class="left_content">
+                                <p>신승훈의 뮤즈에서 싱어송라이터의 시작 </p>
+                                <p>한 장르에 국한되지 않고, 다양한 음악을 소화해내는 로시의<br /> 음악적 역량을 보여줄 수 있도록 섬세한 노력을 기울였다. </p>
+                            </li>
+                            <li class="right_content">
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-record-vinyl"></i> Album</a></li>
+                                    <li><a href="#"><i class="fas fa-video"></i> video</a></li>
+                                    <li><a href="#"><i class="far fa-images"></i> Gallery</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> Schedule</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="more" href="#"> 자세히보기 </a>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+        <section class="news_wrap">
+            <h2 class="hidden">발매,미디어,알림</h2>
+            <div class="scroll_sec">
+                <div class="inner">
+                    <div class="left_text_area">
+                        <ul>
+                            <li>
+                                <h3 class="hidden">발매</h3>
+                                <span class="num">01</span>
+                                <strong># New Release</strong>
+                                <p> 도로시엔터테인먼트 아티스트의 New Release!<br>
+
+                                    앞으로의 새로운 앨범도 기대해주세요!
+                                </p>
+                            </li>
+                            <li>
+                                <h3 class="hidden">미디어</h3>
+                                <span class="num">02</span>
+                                <strong># Media</strong>
+                                <p> 도로시엔터테인먼트 아티스트의 미디어 소식! <br />
+
+                                </p>
+                            </li>
+                            <li>
+                                <h3 class="hidden">알림</h3>
+                                <span class="num">03</span>
+                                <strong># Notice</strong>
+                                <p>도로시엔터테인먼트에서 안내합니다. <br />
+                                    궁금한 사항이 있으면 더보기를 눌러주세요!
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right_pic">
+                        <div class="right_inner">
+                            <div class="img_box">
+                                <div><img src="images/news_back_release_pic.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/news_back_notice_pic.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/news_back_media_pic.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="btn_box">
+                                <a href="#">자세히 보러 가기</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div>
+            <? include "lib/func.php"; ?>
+            <div class="con1">
+                <? latest_article("board", 5, 30); ?>
+            </div>
+        </div>
+
+
+
+        <!--콘텐츠 영역-->
+        <!--하단 삽입 영역-->
+        <? include "common/footer.html"?>
+        <!--하단 삽입 영역-->
+
+    </div>
+
+    <!--<footer id="footer">
+            <h2 class="hidden">하단영역</h2>
+            <div class="footer_wrap">
+                <div class="footer_left">
+                    <h3>Contact Us</h3>
+                    <h4>Address</h4>
+                    <p>(06026) 서울특별시 강남구 언주로151길 12 도로시 빌딩 5층 <br />
+                        지번주소 | 서울특별시 강남구 신사동 628-34 도로시빌딩 5층
+                    </p>
+                    <h4>Tel.</h4>
+                    <p>02)3445-1647</p>
+                    <h4>Fax</h4>
+                    <p>02)3445-1649</p>
+                    <h4>E-mail</h4>
+                    <p>dorothy@dorothycp.com</p>
+                    <p>dorothy@dorothycp.com(채용문의)</p>
+
+                </div>
+                <div class="footer_right">
+                    <h3>Follow Us</h3>
+                    <ul class="follow">
+                        <li>
+                            <a href="#"><img src="common/images/footer_icon_fb.png" alt=""><br />facebook</a></li>
+                        <li><a href="#"><img src="common/images/footer_icon_twt.png" alt=""><br />twitter</a></li>
+                        <li><a href="#"><img src="common/images/footer_icon_youtube.png" alt=""><br />youtube</a></li>
+                        <li><a href="#"><img src="common/images/footer_icon_vlive.png" alt=""><br />V live</a></li>
+                        <li><a href="#"><img src="common/images/footer_icon_post.png" alt=""><br />네이버포스트</a></li>
+                    </ul>
+                    <div class="aud_faq_wrap">
+                        <div class="aud_left">
+                            <h3>Audition</h3>
+                            <a href="#"><strong>오디션 지원</strong>하기</a>
+                        </div>
+                        <div class="faq_right">
+                            <h3>FAQ</h3>
+                            <a href="#"><strong>자주묻는질문</strong> 확인하기</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p>COPYRIGHT(C)2015 DOROTHY COMPANY. ALL RIGHTS RESERVED.</p>
+        </footer>-->
+
+    <!-- 팝업 공지 -->
+
+
+    <!--zindex가 네비보단 밑에-->
+    <div id="showimage" style="z-index:99;position:absolute;width:322px;left:0px;top:300px;">
+        <script>
+            function closeWin() {
+                var chk = document.getElementById('Notice')
+                if (chk.checked) {
+                    setCookie("Notice", "done", 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+                }
+            }
+            if (getCookie("Notice") == "done") {
+                hidebox();
+            }
+        </script>
+        <div>
+            <img src="images/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+        </div>
+        <div style="font-size:12px;text-align:center;color:#666;">
+            <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+            <a href="#" onclick="closeWin();hidebox();return false;"> [close] </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+.sub_menu_wrap{
+    width: 1200px;
+    margin: 100px auto 0px;
+    position: relative;
+}
+.sub_menu_wrap .sub_menu{
+    position: absolute;
+    right: 0px;
+    top: -60px;
+    overflow: hidden;
+}
+.sub_menu_wrap .sub_menu .sub_menu_list {
+    width: 80px;
+    float: left;
+}
+
+/*.content{
+    margin: 200px auto 150px;
+}*/
+.content .introduce_company{
+    overflow: hidden;
+}
+.introduce_company img{
+    float: left;
+    width: 40%;
+}
+.content .introduce_company_txt_wrap{
+    width: 60%;
+    float: right;
+    padding: 25px 60px 60px 100px;
+}
+.content .introduce_company .introduce_company_txt{
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 70px;
+    color: #eaeaea;
+    font-weight: 900;
+    font-family: 맑은고딕, "Malgun Gothic", verdana, arial, dotum, 돋움;
+}
+.content .introduce_company .txt1{
+    font-size: 26px;
+    color: #4f5158;
+    line-height: 1.5em;
+    font-family: '맑은고딕', 'Malgun Gothic', 'verdana', 'arial', 'dotum', '돋움';
+}
+.content .introduce_company .st1{
+    font-size: 36px;
+    color: #333;
+    line-height: 1.5em;
+}
+.content .introduce_company .red{
+    color: #a8191f;
+}
+.content .introduce_company .txt2{
+    padding-top: 50px;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+

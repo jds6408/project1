@@ -1,0 +1,80 @@
+.company_wrap{
+    padding-top: 159px;
+    height: 400px;
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.company_wrap h2{
+    width: 200px;
+    height: 50px;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin: 100px auto 50px;
+}
+.company_wrap h2:before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 75px;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+}
+.btn_wrap{
+    position: relative;
+    top: -30px;
+    z-index: 99;
+}
+.btn_wrap .company_btn_wrap{
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color:#fff;
+}
+.btn_wrap .company_btn_wrap .btn{
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    font-size: 24px;
+    border: 1px solid #ccc;
+}
+.btn_wrap .company_btn_wrap .btn.active{
+    background-color: #a8191f;
+}
+.btn_wrap .company_btn_wrap .btn.active a {
+    color: #fff;
+}
+.btn_wrap .company_btn_wrap .btn:hover{
+    background-color:#a8191f;
+}
+.btn_wrap .company_btn_wrap .btn:hover a{
+    color: #fff;
+}
+.btn_wrap .company_btn_wrap .btn:last-of-type{
+    border-left: none;
+}
+.btn_wrap .company_btn_wrap .btn a {
+    color: #333;
+    display: block;
+}
+.sub_menu_wrap{
+    width: 1200px;
+    margin: 100px auto 0px;
+    position: relative;
+}
+.sub_menu_wrap .sub_menu{
+    position: absolute;
+    right: 0px;
+    top: -60px;
+    overflow: hidden;
+}
+.sub_menu_wrap .sub_menu .sub_menu_list {
+    width: 80px;
+    float: left;
+}
