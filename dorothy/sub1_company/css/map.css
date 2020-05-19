@@ -1,7 +1,7 @@
 .sub_menu_wrap{
     width: 1200px;
     margin: 100px auto 0px;
-    position: relative;
+    position: relative;font-family: 'Nanum Gothic', sans-serif;
 }
 .sub_menu_wrap .sub_menu{
     position: absolute;
@@ -15,15 +15,14 @@
 }
 .content .location_content{
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;font-family: 'Nanum Gothic', sans-serif;
 }
 
 .content .location_content h2{
     text-align: left;
     margin-bottom: 50px;
     font-size: 70px;
-    color: #eaeaea;
-    font-weight: 900;
+    color: #eaeaea; font-family: 'Caveat', cursive;
     line-height: 1.5em;
 }
 .content .location_content .info{
@@ -42,7 +41,7 @@
     margin-top: 80px;
     overflow: hidden;
 }
-.content .location_content .contact .address h3{
+.content .location_content .contact .address h2{
     font-size: 2em;
     margin-bottom: 30px;
     

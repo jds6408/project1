@@ -1,7 +1,7 @@
 window.onload = function() {
             var container = document.getElementById('map');
             var options = {
-                center: new daum.maps.LatLng(37.553661, 127.149366),
+                center: new daum.maps.LatLng(37.522339, 127.032200),
                 level: 2
             };
 
