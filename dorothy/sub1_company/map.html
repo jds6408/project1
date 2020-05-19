@@ -10,172 +10,105 @@
 <head>
     <meta charset="UTF-8">
     <title>map</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="common/css/sub1_company.css">
     <link rel="stylesheet" href="../common/css/footer.css">
     <link rel="stylesheet" href="../common/css/header.css">
-     <script src="../js/jquery-1.12.4.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/jquery-migrate-1.4.1.min.js"></script>
     <script src="../common/js/fullnav.js"></script>
+     <script src="../js/prefixfree.min.js"></script>
     <script src="https://kit.fontawesome.com/96c51572f4.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <div id="skipNav">
+    <div id="skipNav">
         <a href="#content">본문바로가기</a>
         <a href="#gnb">글로벌네비게이션바로가기</a>
     </div>
-  
-  
-   <div id="wrap">
-    <!--헤더 삽입 영역-->
-     <? include "../common/sub_header.html" ?>
-    <!--헤더 삽입 영역-->
 
-   <!-- <header>
-        <div class="head_wrap">
 
-            <div class="head">
-                <h1 class="logo">
-                    <a href="#">
-                        도로시컴퍼니
-                    </a>
-                </h1>
+    <div id="wrap">
+        <!--헤더 삽입 영역-->
+        <? include "../common/sub_header.html" ?>
+        <!--헤더 삽입 영역-->
+
+
+        <section class="content">
+            <div class="company_wrap">
+                <h2>COMPANY</h2>
             </div>
+            <div class="btn_wrap">
+                <h2 class="hidden">컨텐츠 이동 버튼</h2>
+                <ul class="company_btn_wrap">
+                    <a href="about_dorothy.html"><li class="btn ">About</li></a>
+                    <a href="recruit.html"><li class="btn">Recruit</li></a>
+                    <a href="map.html"><li class="btn active">Map</li></a>
 
-            <nav id="gnb">
-                <h2 class="hidden">글로벌네비게이션영역</h2>
-
-                <ul class="drop_down_menu">
-                    <li><a href="#">COMPANY</a></li>
-                    <li><a href="#">ARTIST</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">AUDITION</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>-->
-
-    <!--회사 배너사진+버튼 영역-->
-    <!--<? include "common/sub1_company.html" ?>-->
-    <!--회사 배너사진+버튼 영역-->
-    <section class="content">
-    <div class="company_wrap">
-        <h2>COMPANY</h2>
-    </div>
-    <div class="btn_wrap">
-        <h2 class="hidden">컨텐츠 이동 버튼</h2>
-        <ul class="company_btn_wrap">
-            <li class="btn about"><a class="change_color" href="#">About</a></li>
-            <li class="btn recruit"><a class="change_color" href="#">Recruit</a></li>
-            <li class="btn map"><a class="change_color" href="#">Map</a></li>
-
-        </ul>
-    </div>
-    
-    <div class="sub_menu_wrap">
-        <ul class="sub_menu">
-            <li class="sub_menu_list"><a href="#"><i class="fas fa-home"></i> home &gt;</a></li>
-            <li class="sub_menu_list"><a href="#">company &gt;</a></li>
-            <li class="sub_menu_list"><a href="#">map</a></li>
-        </ul>
-    </div>
-    
-
-    
-        <!--위치 컨텐츠-->
-        
-        <div class="location_content">
-            <h2>찾아오시는길</h2>
-            <span class="info">CONTACT US</span>
-            <div id="map"></div>
-            <div class="contact">
-                <div class="address">
-                    <h3>도로시컴퍼니(주)</h3>
-                    <p>(135-895)서울특별시 강남구 언주로 151길 12 도로시 빌딩 5층</p>
-                </div>
-                <div class="number_wrap">
-                    <div class="number">
-                        <dl class="num">
-                            <dt><img src="images/icons/call.png" alt="call_icon_visiual"></dt>
-                            <dd>02)3445-1674</dd>
-                        </dl>
-                        <dl class="fax">
-                            <dt><img src="images/icons/fax.png" alt="fax_icon_visiual"></dt>
-                            <dd>02)3445-1649</dd>
-                        </dl>
-                    </div>
-                </div>
             </div>
-            <table>
-                <caption>대중교통안내표</caption>
 
-                <tbody>
-                    <tr>
-                        <th scope="row">지하철 이용시
-                        </th>
-                        <td><span class="orange"><i class="fas fa-subway"></i> 3호선</span> 압구정역 3번출구 5분내외</td>
-                        <td><span class="yellow"><i class="fas fa-subway"></i> 분당선</span> 압구정 로데오역 5번출구 15분내외</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">버스 이용시</th>
-                        <td colspan="2"><i class="fas fa-bus-alt"></i> 안녕하세요 버스는 이렇게타세요</td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </div>
-    </section>
-    <!--메인 컨텐츠-->
-    <!--하단 삽입 영역-->
-    <? include "../common/footer.html"?>
-    <!--하단 삽입 영역-->
-
-    <!--<footer id="footer">
-        <h2 class="hidden">하단영역</h2>
-        <div class="footer_wrap">
-            <div class="footer_left">
-                <h3>Contact Us</h3>
-                <h4>Address</h4>
-                <p>(06026) 서울특별시 강남구 언주로151길 12 도로시 빌딩 5층 <br />
-                    지번주소 | 서울특별시 강남구 신사동 628-34 도로시빌딩 5층
-                </p>
-                <h4>Tel.</h4>
-                <p>02)3445-1647</p>
-                <h4>Fax</h4>
-                <p>02)3445-1649</p>
-                <h4>E-mail</h4>
-                <p>dorothy@dorothycp.com</p>
-                <p>dorothy@dorothycp.com(채용문의)</p>
-
-            </div>
-            <div class="footer_right">
-                <h3>Follow Us</h3>
-                <ul class="follow">
-                    <li><a href="#"><img src="common/images/footer_icon_fb.png" alt=""><br />facebook</a></li>
-                    <li><a href="#"><img src="common/images/footer_icon_twt.png" alt=""><br />twitter</a></li>
-                    <li><a href="#"><img src="common/images/footer_icon_youtube.png" alt=""><br />youtube</a></li>
-                    <li><a href="#"><img src="common/images/footer_icon_vlive.png" alt=""><br />V live</a></li>
-                    <li><a href="#"><img src="common/images/footer_icon_post.png" alt=""><br />네이버포스트</a></li>
+            <div class="sub_menu_wrap">
+                <ul class="sub_menu">
+                    <li class="sub_menu_list"><a href="../index.html"><i class="fas fa-home"></i> home &gt;</a></li>
+                    <li class="sub_menu_list"><a href="#">company &gt;</a></li>
+                    <li class="sub_menu_list"><a href="map.html">map</a></li>
                 </ul>
-                <div class="aud_faq_wrap">
-                    <div class="aud_left">
-                        <h3>Audition</h3>
-                        <a href="#"><strong>오디션 지원</strong>하기</a>
-                    </div>
-                    <div class="faq_right">
-                        <h3>FAQ</h3>
-                        <a href="#"><strong>자주묻는질문</strong> 확인하기</a>
-                    </div>
-                </div>
             </div>
 
-        </div>
-    </footer>-->
-</div>
 
-    <!--<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3926191315d005168a87d7d63b8fe7a0"></script>
-    <script src="js/map.js"></script>-->
+
+            <!--위치 컨텐츠-->
+
+            <div class="location_content">
+                <h2>CONTACT US</h2>
+                <span class="info">찾아오시는길</span>
+                <div id="map"></div>
+                <div class="contact">
+                    <div class="address">
+                        <p>도로시컴퍼니(주)</p>
+                        <p>(135-895)서울특별시 강남구 언주로 151길 12 도로시 빌딩 5층</p>
+                    </div>
+                    <div class="number_wrap">
+                        <div class="number">
+                            <a href="tel:02-3445-1674"><dl class="num">
+                                <dt><img src="images/icons/call.png" alt="call_icon_visiual"></dt>
+                                <dd>  02)3445-1674</dd>
+                            </dl></a>
+                            <dl class="fax">
+                                <dt><img src="images/icons/fax.png" alt="fax_icon_visiual"></dt>
+                                <dd>02)3445-1649</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <table>
+                    <caption>대중교통안내표</caption>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">지하철 이용시
+                            </th>
+                            <td><span class="orange"><i class="fas fa-subway"></i> 3호선</span> 압구정역 3번출구 5분내외</td>
+                            <td><span class="yellow"><i class="fas fa-subway"></i> 분당선</span> 압구정 로데오역 5번출구 15분내외</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+        <!--메인 컨텐츠-->
+        <!--하단 삽입 영역-->
+        <? include "../common/sub_footer.html"?>
+        <!--하단 삽입 영역-->
+
+    </div>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3926191315d005168a87d7d63b8fe7a0"></script>
+    <script src="js/map.js"></script>
 </body>
 
 </html>
