@@ -2,10 +2,11 @@
 footer 영역 *********************************************************************/
 #footer{
     position: relative;
+    top: 50px;
     background: #1f1d1d;
     font-size: 1.1em;
-    font-family: '맑은고딕','Malgun Gothic','verdana','arial','dotum', '돋움';
     overflow: hidden;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 #footer .footer_wrap{
     overflow: hidden;
@@ -13,6 +14,28 @@ footer 영역 ******************************************************************
     margin: 50px auto;
     color: #a9a8a8;
 }
+
+#footer .moveTop {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 1em;
+    background: #333;
+    color: #fff
+}
+
+#footer .moveTop span {
+    display: block;
+    margin-top: 15px;
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+
 #footer .footer_wrap h3{
     font-size: 1.2em;
 }
@@ -47,6 +70,9 @@ footer 영역 ******************************************************************
     text-align: center;
     margin-left: 15px;
     margin-right: 15px;
+}
+#footer .footer_wrap .footer_right .follow li:hover {
+    color: #fff;
 }
 #footer .footer_wrap .footer_right .follow li img{
     margin-bottom: 10px;

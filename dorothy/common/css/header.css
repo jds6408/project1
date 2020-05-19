@@ -60,7 +60,7 @@ img{border: 0; vertical-align: top;}
     position: fixed;
      z-index: 100;
     background-color:#fff;
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 #header #top_login{
     text-align: right;
@@ -74,7 +74,7 @@ img{border: 0; vertical-align: top;}
     font-size: 12px;
 }
 #header .head {
-    padding: 20px 0;
+    padding: 30px 0;
 }
 #header .head .logo {
     display: block;
@@ -87,6 +87,8 @@ img{border: 0; vertical-align: top;}
 }
 #header .head .logo a {
     display: block;
+    width: 127px;
+    height: 41px;
 }
 /*position이 없어서 tab시 */
 .nav {
@@ -105,7 +107,7 @@ img{border: 0; vertical-align: top;}
     float: left;
     width: 250px;
     height:50px;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .nav ul.dropdownmenu li h3 {
@@ -119,8 +121,7 @@ img{border: 0; vertical-align: top;}
 .nav ul.dropdownmenu li a.depth1 {
     position: absolute;
     display: block;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 1.3em;
     width: 250px;
     height:50px;
     line-height: 50px;

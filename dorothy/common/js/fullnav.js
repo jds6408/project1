@@ -4,12 +4,12 @@
     $('ul.dropdownmenu').hover(
         function() { 
             $('ul.dropdownmenu li.menu ul').fadeIn('normal',function(){$(this).stop();});
-	       $('#header').animate({height:350},'fast').clearQueue();
+	       $('#header').animate({height:370},'fast').clearQueue();
                  },
         function() {
 	    
 	      $('ul.dropdownmenu li.menu ul').fadeOut('fast');
-          $('#header').animate({height:159},'fast').clearQueue();
+          $('#header').animate({height:179},'fast').clearQueue();
     });
                
             /*$('ul.dropdownmenu li.menu').hover(
