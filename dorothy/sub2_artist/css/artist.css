@@ -1,5 +1,5 @@
 .content {
-    font-family: 'Nanum Gothic Coding', monospace;
+   font-family: 'Nanum Gothic', sans-serif;
 }
 
 /*****************************************************************************************************/
@@ -26,19 +26,19 @@
 /********************************************************아티스트 소개 시작**********************************************************/
 
 .content .artist_wrap_sin {
-    height: 400px;
-    background: url(../images/banner_sin.jpg) 0 70px no-repeat;
+    height: 570px;
+    background: url(../images/banner_sin.jpg) 0 center no-repeat;
     background-attachment: fixed;
-    
-    padding-top: 159px;
+    background-size: 100%;
+    padding-top: 179px;
 }
 
 .content .artist_wrap_rothy {
-    height: 400px;
+    height: 570px;
     background: url(../images/banner_rothy.jpg) 0 center no-repeat;
     background-attachment: fixed;
-    
-    padding-top: 159px;
+    background-size: 100%;
+    padding-top: 179px;
 }
 
 .content .artist_wrap_sin h2 {
@@ -132,10 +132,10 @@
     text-indent: 50px;
     margin-bottom: 50px;
     padding-top: 100px;
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: bold;
     color: #b2a8a8;
-    font-family: 'Josefin Sans', sans-serif;
+     font-family: 'Caveat', cursive;
 }
 
 .content .artist_introduce .profile .intro .leftBox {
@@ -188,16 +188,19 @@
     text-indent: 50px;
     margin-bottom: 50px;
     padding-top: 100px;
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: bold;
     color: #b2a8a8;
     padding-bottom: 20px;
-    border-bottom: 2px solid #a8191f;
+    border-bottom: 2px solid #b2a8a8;
+     font-family: 'Caveat', cursive;
 }
 
 .content .artist_introduce .albums ul {
     overflow: hidden;
     margin-left: 100px;
+    position: relative;
+    bottom: -1000px;
 }
 
 .content .artist_introduce .albums ul li {
@@ -222,13 +225,15 @@
 .content .artist_introduce .albums ul li span {
     display: block;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     color: #fff;
     font-weight: bold;
     display: none;
     transition-delay: 2s;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 .content .artist_introduce .albums ul li img {
@@ -248,8 +253,13 @@
     color: #333;
     font-weight: 700;
     border: 1px solid #333;
+    transition: 1s;
 }
-
+.content a.more:hover {
+    background: #a8191f;
+    color: #fff;
+    border: none;
+}
 /********************************************************아티스트 앨범 끝**********************************************************/
 
 /********************************************************아티스트 비디오 시작**********************************************************/
@@ -265,11 +275,12 @@
     text-indent: 50px;
     margin-bottom: 50px;
     padding-top: 100px;
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: #b2a8a8;
+     font-family: 'Caveat', cursive;
     font-weight: bold;
     padding-bottom: 20px;
-    border-bottom: 2px solid #a8191f;
+    border-bottom: 2px solid #b2a8a8;
 }
 
 .content .artist_introduce .profile .video .vid,
@@ -289,10 +300,11 @@
 
 .clip2 .subTitle {
     position: relative;
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: center;
     color: #333;
     padding-top: 20px;
+    line-height: 1.5em;
 }
 
 .clip2 .subTitle:after {
@@ -331,8 +343,8 @@
 }
 
 .clip2 .clip_part .contentArea p {
-    color: #fff;
-    text-align: justify;
+    color: #333;
+    text-align: center;
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -370,11 +382,12 @@
     text-indent: 50px;
     margin-bottom: 50px;
     padding-top: 100px;
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: bold;
     color: #b2a8a8;
+     font-family: 'Caveat', cursive;
     padding-bottom: 20px;
-    border-bottom: 2px solid #a8191f;
+    border-bottom: 2px solid #b2a8a8;
 }
 
 .content .gallery ul {
