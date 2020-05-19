@@ -1,6 +1,6 @@
 .company_wrap{
-    padding-top: 159px;
-    height: 400px;
+    padding-top: 179px;
+    height: 570px;
     background: url(../images/sub1_company_banner_pic.jpg) no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -13,6 +13,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .company_wrap h2:before{
     content: "";
@@ -34,6 +35,7 @@
     margin: 0 auto;
     overflow: hidden;
     background-color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .btn_wrap .company_btn_wrap .btn{
     width: 300px;
@@ -46,12 +48,11 @@
 }
 .btn_wrap .company_btn_wrap .btn.active{
     background-color: #a8191f;
-}
-.btn_wrap .company_btn_wrap .btn.active a{
     color: #fff;
 }
 .btn_wrap .company_btn_wrap .btn:hover{
     background-color:#a8191f;
+    color:#fff
 }
 .btn_wrap .company_btn_wrap .btn:hover a {
     color: #fff;
