@@ -1,25 +1,25 @@
 .company_wrap{
-    padding-top: 159px;
-    height: 400px;
+    padding-top: 179px;
+    height: 570px;
     background: url(../images/banner.jpg) no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
 .company_wrap h2{
-    width: 200px;
-    height: 50px;
     font-size: 36px;
-    line-height: 50px;
     text-align: center;
     color: #fff;
     position: relative;
-    margin: 100px auto 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);font-family: 'Nanum Gothic', sans-serif;
 }
 .company_wrap h2:before{
     content: "";
     position: absolute;
-    top: -10px;
-    left: 75px;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 50px;
     height: 3px;
     background-color: #fff;
@@ -33,7 +33,7 @@
     width: 600px;
     margin: 0 auto;
     overflow: hidden;
-    background-color:#fff;
+    background-color:#fff;font-family: 'Nanum Gothic', sans-serif;
 }
 .btn_wrap .company_btn_wrap .btn{
     width: 300px;
@@ -66,7 +66,7 @@
 .sub_menu_wrap{
     width: 1200px;
     margin: 100px auto 0px;
-    position: relative;
+    position: relative;font-family: 'Nanum Gothic', sans-serif;
 }
 .sub_menu_wrap .sub_menu{
     position: absolute;

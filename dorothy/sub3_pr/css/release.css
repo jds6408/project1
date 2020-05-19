@@ -1,5 +1,7 @@
 section.release_sec{
+    font-family: 'Nanum Gothic', sans-serif;
 }
+
 
 section.release_sec #content{
     overflow: hidden;
@@ -17,9 +19,9 @@ section.release_sec #content div[class^=release]{
 section.release_sec #content div[class^=release] div{
     overflow: hidden;
 }
-section.release_sec #content div[class^=release]:hover div{
+/*section.release_sec #content div[class^=release]:hover div{
     border: 10px solid #efefef;
-}
+}*/
 
 section.release_sec #content div[class^=release] img{
     width: 100%;
@@ -34,11 +36,11 @@ section.release_sec #content div[class^=release] dl{
     text-align: center;
 }
 section.release_sec #content div[class^=release] dt{
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
     padding: 10px 0;
 }
 section.release_sec #content div[class^=release] dd{
-    font-size: .9em;
+    font-size: 1.1em;
     padding: 0px 0px 10px 0;
 }
