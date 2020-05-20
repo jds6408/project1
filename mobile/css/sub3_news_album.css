@@ -22,8 +22,6 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    background: rgba(0,0,0,0.3);
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
 }
 
 #content .back .opacBox ul{
@@ -51,12 +49,11 @@
 }
 #content .back .opacBox ul li.listBox a img{
     width: 100%;
-    box-shadow: 1px 3px 5px 5px rgba(255,255,255,0.3);
+    box-shadow: 1px 3px 5px 5px rgba(0,0,0,0.3);
 }
 #content .back .opacBox ul li.listBox dl{
     display: block;
     font-size: 1em;
-    color: #efefef;
     padding: 10px 0;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -67,13 +64,11 @@
     padding-bottom: 5px;
     line-height: 1.2em;
     font-size: 1.2em;
-    color: #e3d8d8;
 }
 #content .back .opacBox ul li.listBox dd{
     display: block;
     line-height: 1.5em;
     font-size: .9em;
-    color:#e3d8d8;
 }
 
 #content .back .opacBox a.more {
